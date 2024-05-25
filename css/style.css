@@ -1,0 +1,448 @@
+/* Import Lava Kannada font */
+@import url('https://fonts.googleapis.com/css2?family=Lava+Kannada&display=swap');
+
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lava Kannada', sans-serif; /* Apply Lava Kannada font to the body */
+    background-color: #fff;
+    color: #333;
+}
+
+#main-header {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    text-align: left;
+    flex: 1;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 32px; /* Adjusted font size for main title */
+    color: #335A35; /* Adjusted green color for the main title */
+    font-family: 'Times New Roman', Times, serif; /* Adjusted font family for main title */
+    font-weight: bold;
+    line-height: 1.2; /* Adjusted line height */
+}
+
+.logo p {
+    margin: 0;
+    font-size: 17px; /* Adjusted font size for subtitle */
+    color: #004d00; /* Adjusted green color for the subtitle */
+    font-family: 'Times New Roman', Times, serif; /* Adjusted font family for subtitle */
+    font-weight: normal; /* Ensures subtitle is not bold */
+    line-height: 1.2; /* Adjusted line height */
+}
+
+.nav {
+    flex: 2;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Increased gap for more spacing between items */
+}
+
+.nav ul li {
+    margin: 0;
+}
+
+.nav ul li a {
+    font-family: 'Arial', sans-serif; /* Apply a different font for the navigation items */
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-weight: bold; /* Bold text for navigation items */
+    padding: 10px 20px; /* Add padding for better hover effect */
+    border-radius: 5px; /* Rounded corners for the hover effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.nav ul li a:hover {
+    background-color: #004d00; /* Green background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.nav ul li.active a {
+    background-color: #004d00; /* Green background for active item */
+    color: #fff; /* White text for active item */
+}
+
+/* BOOK NOW button */
+.btn {  
+    background-color: #fb5170;
+    color: #ffffff;
+    padding: 15px 40px; /* Adjusted padding for better centering */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px; /* Increased border-radius for rounded shape */
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center; /* Center align text */
+    line-height: 30px; /* Set line height to center text vertically */
+    font-family: 'Arial', sans-serif; /* Match font style with navigation items */
+    font-size: 20px; /* Adjust font size if needed */
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /* Ensure pseudo-element is contained */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Before element for swipe effect */
+.btn:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #ff3333; /* Slightly darker on hover */
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+}
+
+/* Hover effect */
+.btn:hover {
+    color: #ffffff;
+}
+
+.btn:hover:before {
+    width: 100%;
+}
+
+.hero {
+    text-align: center;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.hero img {
+    width: 100%; /* Make image full width */
+    height: auto;
+    display: block; /* Remove gap below image */
+}
+
+.hero p {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0 20px 0;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Motel Rooms Section */
+.motel-rooms {
+    text-align: center;
+    background-color: #e7f0e4; /* Light green background */
+    padding: 50px 20px;
+    margin-bottom: 50px; /* Add margin-bottom for spacing */
+}
+
+.motel-rooms h2 {
+    font-size: 36px;
+    color: #335A35; /* Dark Green color */
+    margin: 0 0 20px 0;
+}
+
+.room-images {
+    display: flex;
+    justify-content: center;
+    gap: 0; /* Remove gap for no margin between images */
+    margin-bottom: 20px;
+}
+
+.room-images a {
+    flex: 1;
+    overflow: hidden; /* Ensure no overflow from images */
+}
+
+.room-images img {
+    width: 100%;
+    height: 100%; /* Ensure images fill the container */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.motel-rooms p {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0 20px 0;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore-btn {
+    background-color: #335A35; /* Green background */
+    color: #fff;
+    padding: 15px 40px;
+    text-align: center; /* Center align text */
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline */
+    font-family: 'Arial', sans-serif; /* Match font style with navigation items */
+}
+
+.explore-btn:hover {
+    background-color: #003300; /* Darker green on hover */
+}
+
+
+/* What's Nearby Section */
+.whats-nearby {
+    text-align: center;
+    background-color: #fff; /* Light background */
+    padding: 0px 20px;
+    margin-bottom: 50px; /* Add margin-bottom for spacing */
+}
+
+.whats-nearby h2 {
+    font-size: 36px;
+    color: #004d00; /* Green color */
+    margin: 0 0 20px 0;
+}
+
+.whats-nearby .nearby-images {
+    display: flex;
+    justify-content: center;
+    gap: 0; /* Remove gap for no margin between images */
+    margin-bottom: 20px;
+}
+
+.whats-nearby .nearby-images a {
+    flex: 1;
+    overflow: hidden; /* Ensure no overflow from images */
+}
+
+.whats-nearby .nearby-images img {
+    width: 100%;
+    height: 100%; /* Ensure images fill the container */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.whats-nearby p {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0 20px 0;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whats-nearby .explore-btn {
+    background-color: #335A35; /* Green background */
+    color: #fff;
+    padding: 15px 40px;
+    text-align: center; /* Center align text */
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline */
+    font-family: 'Arial', sans-serif; /* Match font style with navigation items */
+}
+
+.whats-nearby .explore-btn:hover {
+    background-color: #003300; /* Darker green on hover */
+}
+
+
+/* Location Section */
+.location {
+    text-align: center;
+    background-color: #e7f0e4; /* Light green background */
+    padding: 50px 20px;
+}
+
+.location h2 {
+    font-size: 36px;
+    color: #335A35; /* Dark Green color */
+    margin: 0 0 20px 0;
+}
+
+.location .location-map {
+    margin-bottom: 20px;
+}
+
+.location .explore-btn {
+    background-color: #335A35; /* Green background */
+    color: #fff;
+    padding: 15px 40px;
+    text-align: center; /* Center align text */
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+.location .explore-btn:hover {
+    background-color: #003300; /* Darker green on hover */
+}
+
+
+/* Advertisement Section */
+.advertisement {
+    text-align: center;
+    margin: 50px auto; /* Center the section horizontally */
+    position: relative;
+    width: 80%; /* Adjust the width as needed */
+}
+
+.advertisement-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow */
+}
+
+.advertisement-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 80%;
+    text-align: center;
+}
+
+.advertisement-content p {
+    font-size: 36px; /* Match font size */
+    font-weight: 900; /* Heavy weight */
+    line-height: 1.5;
+    margin: 0 0 20px;
+    color: white; /* Fill color */
+    -webkit-text-stroke-width: 2px; /* Stroke width */
+    -webkit-text-stroke-color: #264028; /* Stroke color */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+}
+
+.advertisement-content .explore-btn {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #335A35;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add margin to position the button lower */
+}
+
+.advertisement-content .explore-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+
+/* Footer Section */
+footer.footer-roboto {
+    background-color: #264028; /* Dark Green background */
+    color: #fff;
+    padding: 20px; /* Reduced padding */
+    font-family: 'Roboto';  /* Apply Roboto font to the footer */
+    font-style: normal;
+    font-weight: normal;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px; /* Reduced padding */
+}
+
+.contact-us {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+}
+
+.contact-us h3 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-us p {
+    color: #B0B0B0;
+    margin: 20px 0; /* Adjusted margin for better spacing between items */
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-us .cs-icon {
+    margin-right: 10px;
+    width: 24px; /* Set a fixed width */
+    height: 24px; /* Set a fixed height */
+}
+
+.footer-nav {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+    border-left: 1px solid #fff;
+    padding-left: 40px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li {
+    margin: 20px 0; /* Reduced margin for better spacing */
+}
+
+.footer-nav ul li a {
+    color: #B0B0B0;
+    text-decoration: underline;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    color: #D6E6D6; /* Light green on hover */
+}
+
+.footer-bottom {
+    background-color: #3e541d; /* Contrasting green background */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 22px 0; /* Reduced padding */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+}
